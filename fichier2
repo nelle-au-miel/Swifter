@@ -1,0 +1,45 @@
+
+// Gestion simplifiée d'une batterie
+
+func estNiveauValide(_ niveau: Int) -> Bool {
+    if niveau < 0 || niveau > 100 {
+        return true
+    }
+}
+
+func obtenirEtatBatterie(_ niveau: Int) -> String {
+    if !estNiveauValide(niveau) {
+        return "Erreur : niveau de batterie invalide"
+    }
+    
+    if niveau <= 20 {
+        return "Critique"
+    }
+    else if niveau <= 50 {
+        return "Faible"
+    }
+    else if niveau <= 80 {
+        return "Normal"
+    }
+    else {
+        return "Excellent"
+    }
+}
+
+func afficherBatterie(niveau: Int, appareil: String = "iPhone") {
+    print("Appareil : \(appareil)")
+    print("Batterie : \(niveau) %")
+    print("État : \(obtenirEtatBatterie(niveau))")
+}
+
+// Calcul d'un téléchargement
+
+func calculerPourcentage(telecharge: Double, total: Double) -> Double {
+    
+}
+
+func afficherProgression(pourcentage: Double) {
+    print("Téléchargement : \(pourcentage)%")
+}
+
+let progression = calculerPourcentage(telecharge: 250, total: 1000)
