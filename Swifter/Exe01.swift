@@ -5,6 +5,7 @@
 //  Created by Jaynelle Latortue-Raymond (Étudiant) on 2026-09-07.
 //
 
+// EXERCICE 01 : CALCULATEUR DE COMMANDE
 func exe01() {
     
     // I. Données ----------------------------------------------------------
@@ -79,3 +80,5 @@ func exe01() {
         print("----------------------")
     }
 }
+
+exe01()

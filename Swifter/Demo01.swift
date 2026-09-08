@@ -1,30 +1,34 @@
 //
-//  Demo01.swift
+//  Demo1.swift
 //  Swifter
 //
 //  Created by Jaynelle Latortue-Raymond (Étudiant) on 2026-09-07.
 //
-func demo01() {
 
-// Créer une fiche d'application
+// VARIABLES, CONTANTES ET TYPES
+func demo1() {
 
-// 1.
-let nomApp = "Choco Minette"
-let version = "6.0.3f"
-let utilisateurs = 250
-let prix = 169.99
-let developpeur = "Minette"
+    // Créer une fiche d'application
 
-print("\(nomApp) est une application développée par \(developpeur).")
-print("Elle est à \(prix) $ et la dernière version est \(version).")
-print("N'hésitez pas à vous la proccurer puisqu'elle à l'aire de satisfaire leur \(utilisateurs) clients !")
+    // 1.
+    let nomApp = "Choco Minette"
+    let version = "6.0.3f"
+    let utilisateurs = 250
+    et prix = 169.99
+    let developpeur = "Minette"
 
-// 2.
-let prenom = "Jaynelle"
-let anneeNaissance = 2002
-let anneeActuelle = 2026
+    print("\(nomApp) est une application développée par \(developpeur).")
+    print("Elle est à \(prix) $ et la dernière version est \(version).")
+    print("N'hésitez pas à vous la proccurer puisqu'elle à l'aire de satisfaire leur \(utilisateurs) clients !")
 
-let age = anneeActuelle - anneeNaissance
+    // 2.
+    let prenom = "Jaynelle"
+    let anneeNaissance = 2002
+    let anneeActuelle = 2026
 
-print("Je suis \(prenom) et j'ai \(age) ans.")
+    let age = anneeActuelle - anneeNaissance
+
+    print("Je suis \(prenom) et j'ai \(age) ans.")
 }
+
+demo1()

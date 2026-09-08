@@ -4,6 +4,8 @@
 //
 //  Created by Jaynelle Latortue-Raymond (Étudiant) on 2026-09-07.
 //
+
+// EXERCICE 02 : SIMULATION D'UNE APPLICATION EN MODE TÉLÉCHAREMENT
 func exe02() {
     
     // I. Données ----------------------------------------------------------
@@ -25,18 +27,16 @@ func exe02() {
         print("Téléchargement démarré...")
 
         // Partie 3 - Progression du téléchargement
-        for progression in stride(from: progression, through: 100, by: 10) {
+        while progression <= 100 {
 
             // Partie 8 — Utilisation de continue
             if progression == 40 {
                 print("Vérification des données...")
+                progression += 10
                 continue
             }
 
             print("Téléchargement : \(progression) %")
-            batterie -= 5
-            print("Batterie : \(batterie) %")
-
             // Défi supplémentaire
             if modeEconomieEnergie {
                 batterie -= 2
@@ -44,6 +44,7 @@ func exe02() {
             else {
                 batterie -= 5
             }
+            print("Batterie : \(batterie) %")
 
             // Partie 4 - Messages selon la progression
             if progression == 50 {
@@ -57,13 +58,13 @@ func exe02() {
             }
 
             // Partie 5 - Surveillance de la batterie
-            if batterie <= 20 {
-                print("Attention : batterie faible.")
-            }
-            else if batterie <= 10 {
+            if batterie <= 10 {
                 telechargementAnnule = true
                 print("Téléchargement interrompu : batterie critique.")
                 break
+            }
+            else if batterie <= 20 {
+                print("Attention : batterie faible.")
             }
 
             // Partie 6 - Perte de connexion simulée
@@ -73,20 +74,11 @@ func exe02() {
                 telechargementAnnule = true
                 break
             }
+            progression += 10
         }
-        // Partie 7 — Nouvelle simulation
-        batterie = 35
-        wifi = false
-        telechargementAnnule = true
-
-        for _ in stride(from: progression, through: 100, by: 10) {
-            if !wifi {
-                print("Connexion Wi-Fi requise.")
-            }
-        }
-
     } else {
-        if !wifi {
+
+        if !wifiActif {
             print("Connexion Wi-Fi requise.")
         }
 
@@ -99,9 +91,22 @@ func exe02() {
         }
     }
 
-    print("------ RÉSUMÉ ------")
+    print("---------- RÉSUMÉ ----------")
     print("Application : \(application)")
     print("Progression finale : \(progression) %")
     print("Batterie restante : \(batterie) %")
-    print("Wi-Fi actif : \(wifi)")
-    print("Téléchargement terminé : \(telechargementAnnule)")}
+    print("Wi-Fi actif : \(wifiActif)")
+    print("Téléchargement terminé : \(!telechargementAnnule)")
+    print("----------------------------")
+
+    // Partie 7 — Nouvelle simulation
+    batterie = 35
+    wifiActif = false
+    telechargementAnnule = true
+
+    if !wifiActif {
+        print("Connexion Wi-Fi requise.")
+    }
+}
+
+exe02()

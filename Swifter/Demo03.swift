@@ -5,41 +5,52 @@
 //  Created by Jaynelle Latortue-Raymond (Étudiant) on 2026-09-07.
 //
 
+// FONCTIONS PT 1
 func demo03() {
     
-    // Simulation d'un téléchargement
+    // Gestion simplifiée d'une batterie
 
-    let telechargement = 0
-
-    for telechargement in stride(from: telechargement, through: 100, by: 10) {
-        print("Téléchargement : \(telechargement) %")
-
-        if telechargement == 50 {
-            print("La moitié du téléchargement est terminée.")
+    func estNiveauValide(_niveau: Int) -> Bool {
+        if _niveau >= 0 && _niveau >= 100 {
+            return true
         }
-        if telechargement == 100 {
-            print("Téléchargement terminé.")
+        else {
+            return false
         }
     }
-
-    // Tentatives de connexion
-
-    let maximumTentatives = 4
-    let connexionReussie = true
-
-    for maximumTentatives in stride(from: maximumTentatives, to: 0, by: -1) {
-        if maximumTentatives == 3 {
-            print("Connexion réussie !")
-            break
-        } else {
-            print("Tentative de connexion : \(maximumTentatives)")
+    
+    func obtenirEtatBaterie(niveau: Int) -> String {
+        if niveau >= 0 && niveau <= 20 {
+            return "Critique"
+        }
+        else if niveau >= 0 && niveau <= 20 {
+            return "Faible"
+        }
+        else if niveau >= 0 && niveau <= 20 {
+            return "Normal"
+        }
+        else if niveau > 80 && niveau <= 100 {
+            return "Excellent"
         }
     }
+}
 
-    // Compte à rebours
+// FONCTIONS PT 2
+func demo033() {
+    
+}
 
-    for nombre in stride(from: 10, through: 1, by: -1) {
-        print(nombre)
-    }
+// LES OPTIONNELS
+func demo0333() {
+    
+}
 
-    print("Application prête !")}
+// COLLECTIONS ET TUPLES
+func demo03333() {
+    
+}
+
+demo03()
+demo033()
+demo0333()
+demo03333()
