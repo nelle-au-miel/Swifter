@@ -1,20 +1,21 @@
 //
-//  Demo1.swift
+//  Demo1-0.swift
 //  Swifter
 //
 //  Created by Jaynelle Latortue-Raymond (Étudiant) on 2026-09-07.
 //
 
 // VARIABLES, CONTANTES ET TYPES
-func demo1() {
 
+func demo1_0() {
+    
     // Créer une fiche d'application
 
     // 1.
     let nomApp = "Choco Minette"
     let version = "6.0.3f"
     let utilisateurs = 250
-    et prix = 169.99
+    let prix = 169.99
     let developpeur = "Minette"
 
     print("\(nomApp) est une application développée par \(developpeur).")
@@ -30,5 +31,3 @@ func demo1() {
 
     print("Je suis \(prenom) et j'ai \(age) ans.")
 }
-
-demo1()

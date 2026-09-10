@@ -1,12 +1,13 @@
 //
-//  Exe02.swift
+//  Exe2.swift
 //  Swifter
 //
 //  Created by Jaynelle Latortue-Raymond (Étudiant) on 2026-09-07.
 //
 
-// EXERCICE 02 : SIMULATION D'UNE APPLICATION EN MODE TÉLÉCHAREMENT
-func exe02() {
+// EXERCICE 2 : SIMULATION D'UNE APPLICATION EN MODE TÉLÉCHAREMENT
+
+func exe2() {
     
     // I. Données ----------------------------------------------------------
 
@@ -108,5 +109,3 @@ func exe02() {
         print("Connexion Wi-Fi requise.")
     }
 }
-
-exe02()
