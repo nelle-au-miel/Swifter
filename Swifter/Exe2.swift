@@ -16,7 +16,7 @@ func exe2() {
     var batterie: Int = 80
     var telechargementAnnule: Bool = false
     var wifiActif: Bool = true
-    var modeEconomieEnergie: Bool = false
+    let modeEconomieEnergie: Bool = false
 
     // II. Questions ----------------------------------------------------------
 
