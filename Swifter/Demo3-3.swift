@@ -9,4 +9,14 @@
 
 func demo3_3() {
     
+    // Profil utilisateur complet
+    
+    
+    
+    // Validation d'ue saisie
+    
+    
+    
+    // Coordonnées GPS
+    
 }

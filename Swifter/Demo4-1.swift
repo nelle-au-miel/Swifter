@@ -7,8 +7,13 @@
 
 // CLASSES, OBJETS, PROPRIÉTÉS ET MÉTHODES
 
-func demo04_1f() {
+func demo04_1() {
 
-
+    // Gestion d'appareils mobiles
+    
+    
+    
+    // Appareils nécessitant une attention
+    
 }
-
+

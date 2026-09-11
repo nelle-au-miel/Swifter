@@ -9,4 +9,13 @@
 
 func demo3_4() {
     
+    // Gestion d'une application
+    
+    
+    
+    // Historique d'une batterie
+    
+    
+    
+    // Recherche dans une collection
 }

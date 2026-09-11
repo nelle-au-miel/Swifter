@@ -27,7 +27,7 @@ func demo2_2() {
     // Tentatives de connexion
     
     let maximumTentatives = 4
-    let connexionReussie = true
+//    let connexionReussie = true
     
     for maximumTentatives in stride(from: maximumTentatives, to: 0, by: -1) {
         if maximumTentatives == 3 {

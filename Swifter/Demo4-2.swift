@@ -9,4 +9,10 @@
 
 func demo4_2() {
 
+    // Gestion d'un téléchargement
+    
+    
+    
+    // Observateur de progression
+    
 }

@@ -67,27 +67,23 @@ func demo3_2() {
     
     
     // Choisir une opération
-
-    func additionner(_ a: Double, _ b: Double) -> Double {
-        return a + b
-    }
-    func soustraire(_ a: Double, _ b: Double) -> Double {
-        return a - b
-    }
-    func multiplier(_ a: Double, _ b: Double) -> Double {
-        return a * b
-    }
     
     func choisirOperation(type: String) -> (Double, Double) -> Double {
 
         if type == "addition" {
-            return additionner
+            return { a, b in
+                a + b
+            }
         }
         else if type == "soustraction" {
-            return soustraire
+            return { a, b in
+                a - b
+            }
         }
-        else if type == "multiplication" {
-            return multiplier
+        else {
+            return { a, b in
+                a * b
+            }
         }
     }
     let operation = choisirOperation(type: "multiplication")
