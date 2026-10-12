@@ -15,7 +15,7 @@ struct ContentView: View {
                 .foregroundStyle(.tint)
             Text("Hello, world!")
             Button("Exécuter l'exercice !") {
-                simAppTelecharg()
+                choisirOp()
             }
         }
         .padding()
