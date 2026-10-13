@@ -4,7 +4,7 @@
 //
 //  Created by Jaynelle Latortue-Raymond (Étudiant) on 2026-10-11.
 //
-func serie1() {
+func analyseTempSemaine() {
 
     let temperatures: [Double?] = [
         18.5, 21.0, nil, 16.5,
@@ -55,9 +55,13 @@ func serie1() {
             if temperature < minTemp {
                 minTemp = temperature
             }
-            somme += temperature
-            moyenne = somme / Double(nbTemp)
-            
+            if nbTemp != 0 {
+                somme += temperature
+                moyenne = somme / Double(nbTemp)
+            }
+            else {
+                print("Impossible de calculer la moyenne.")
+            }
             if temperature > 20 {
                 joursChauds.append(jour)
             }
@@ -75,4 +79,5 @@ func serie1() {
     print("Température maximale : \(maxTemp)")
     print("Température moyenne : \(moyenne)")
     print("Jours chauds : \(joursChauds)")
+    
 }
