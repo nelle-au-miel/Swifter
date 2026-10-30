@@ -53,6 +53,11 @@ struct InteractiveCardView: View {
                 }
             }
             .buttonStyle(.borderedProminent)
+            
+            Button("Rotation") {
+                angle = .degrees(angle.degrees + 45)
+            }
+            .buttonStyle(.borderedProminent)
         }
         .padding()
         .alert(

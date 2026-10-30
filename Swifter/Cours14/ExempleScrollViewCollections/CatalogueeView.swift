@@ -56,7 +56,7 @@ struct CatalogueeView: View {
                         spacing: 16
                     ) {
                         ForEach(produits) { produit in
-                            ProduitCardView(produit: produit)
+                            //ProduitCardView(produit: produit)
                         }
                     }
                 }

@@ -12,8 +12,8 @@ struct ProduitCardView: View {
 
     var body: some View {
         VStack(spacing: 12) {
-            Image(systemName: produit.icone)
-                .font(.system(size: 38))
+//            Image(systemName: produit.icone)
+//                .font(.system(size: 38))
 
             Text(produit.nom)
                 .font(.headline)
