@@ -11,7 +11,8 @@ import SwiftUI
 struct SwifterApp: App {
     var body: some Scene {
         WindowGroup {
-//            CommandeView()
+            LocationView()
+//            CarteView()
         }
     }
 }

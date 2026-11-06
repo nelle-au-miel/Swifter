@@ -10,9 +10,22 @@
 		782188CF307C15F00032E240 /* Swifter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Swifter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		78CEA428309E46E8001F5B78 /* Exceptions for "Swifter" folder in "Swifter" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 782188CE307C15F00032E240 /* Swifter */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		782188D1307C15F00032E240 /* Swifter */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				78CEA428309E46E8001F5B78 /* Exceptions for "Swifter" folder in "Swifter" target */,
+			);
 			path = Swifter;
 			sourceTree = "<group>";
 		};
@@ -253,6 +266,8 @@
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Swifter/Info.plist;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Votre position est utilisée pour afficher les services à\nproximité.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -284,6 +299,8 @@
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Swifter/Info.plist;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Votre position est utilisée pour afficher les services à\nproximité.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
